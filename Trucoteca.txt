@@ -1,5 +1,0 @@
-/*.gz 	no funcionó
-
-zcat ncbi[tab]*.gz > todos.faa.gz 	Tampoco funcionó
-
-zcat ncbi[tab]*.gz | grep ">" > encabezados.txt  	Funcionó!
