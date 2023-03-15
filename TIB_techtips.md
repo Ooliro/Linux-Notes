@@ -1,27 +1,17 @@
 # EBM 2022
-### Datos de acceso al servidor de bioinformática
-
-IP del servidor: 132.248.220.16  
-Puerto SSH: 2424  
-Nombre de usuario: guest09  
-Contraseña: P$j9PVHLqQ
+### Datos de acceso a un servidor remoto
 
 Comando:
-`$ ssh -X guest09@132.248.220.16 -p 2424`
+`$ ssh guest09@123.456.789.12 -p 1234`
 
-Y luego la contraseña esa:
-`P$j9PVHLqQ`
 
 Si quieres cargar un archivo desde tu maquina local a una remota, se hace mas o menos asi:
-`scp phyml_tutorial_data.tgz guest09@132.248.220.16:/home/guest09/sesion6_ML`
+`scp phyml_tutorial_data.tgz guest09@123.456.789.12:/home/guest09/sesion6_ML`
 
 Si quieres descargar algo desde un repositorio github usas
 `wget https://github.com/vinuesa/TIB-filoinfo`
 
 ### Datos de acceso a "Cursos del NNB-UNAM"
-
-Usuario: raulolivaresrosas@gmail.com
-Contraseña: mN#1z1/T
 
 ## Notas Importantes
 
@@ -49,13 +39,6 @@ pangenoma - Genoma núcleo compartida por todos los [] + el genoma dispensable, 
 Para el dominio de CS puede que haya aa núcelo. Si las dos proteínas son homologas podría haber forma de probarlo, no solo para que nos diga que lo son, sino dónde podrían serlo y así pulir aún más nuestras secuencias semilla con los dominios catalíticos de CS y HS. [BBH's, BDBH's, Get_homologues, COG's, y OrthoMCL si crees que puede ayudar]
 
 Get_Homologues fue creado por el Dr. Pablo Vinuesa, y se corre en un servidor por el tiempo y recursos que puede consumir. Recomienda su instalación por Docker, ya que evita problemas de permisos y requerimientos mínimos del SO. Además, analiza genomas, proteomas, secuencias COMPLETAS de las especies que le des, no a nivel de dominio, pero aún así podría ser útil si resultara que los dominios de CS aparecen en el análisis pangenómico como core o shells.
-
-
-
-
-![225d9ea614f6741300cb3c61351e1d78.png](225d9ea614f6741300cb3c61351e1d78.png)
-
-
 
 
 ## Apuntes
