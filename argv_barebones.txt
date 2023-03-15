@@ -1,0 +1,16 @@
+
+# OPCION 1
+
+import sys
+
+file_name = sys.argv[1]
+f = open(file_name)
+data = f.read()
+f.close()
+
+# OPCION 2
+
+import sys
+with open(sys.argv[1], 'r') as f:
+    contents = f.read()
+print contents

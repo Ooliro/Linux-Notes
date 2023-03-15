@@ -1,0 +1,69 @@
+pwd
+Print Working Directory  
+	Agregale un cd- para regresar a casa (home)
+
+hostname
+El nombre de la red de mi computadora
+
+mkdir
+Make Directory
+
+cd
+Change Directory 
+	.. son para "subir" en el árbol (o regresar a la carpeta madre de donde estabas, una por una)
+
+ls
+List Directory, oseaseme que te muestre la lista de lo que hay en el directorio actual
+
+rmdir
+Remove Directory
+
+pushd
+Push Directory 
+
+Para estos dos (pushd & popd) https://learnpythonthehardway.org/python3/appendix-a-cli/ex8.html
+
+popd
+Pop Directory 
+
+cp
+Copy a file or direcory
+ 
+mv
+Move a file or directory
+
+less
+Page through a file
+
+cat
+print the whole file
+
+xargs
+Execute arguments
+
+find
+Fin Files
+
+grep
+Find things inside files
+
+man
+Read a manual page
+
+apropos
+Find wich man page is appropiate
+
+env
+Look at your enviroment
+
+echo
+Print some arguments
+
+export
+export/set a new enviroment variable
+
+sudo
+Hacer cosas con permiso de admin 
+
+warawara.strip()
+Quita espacios en blanco de una cadena de caracteres. O puedes especificar en los parentesis qué es lo que quieres tomar como parametro para separar algo

@@ -1,0 +1,27 @@
+$tar -xvf _____.tar
+Desempaquetar un archivo .tar. Es posible que en algunos casos te de error por falta de permisos, pero solo agrega el sudo antes del tar -xvf y se soluciona.
+
+$zcat _____.gz | less
+Visualizar archivo comprimido con gzip(.gz).Los archivos comprimidos de este modo son archivos binarios por lo que no se pueden leer como archivos de texto plano. Esto es necesario para los datos de secuencias biológicas porque pueden pesar mucho. Si no le agregas el "| less" ves lo mismo pero en la linea de comandos, en lugar de verlo en el "modo lectura", oseaseme donde presionas Q para salir.
+
+$gunzip _____.gz
+
+$gunzip *.gz
+Descomprime un archivo en formato gz. Con el siguiente comando, puedes descomprimir TODOS los archivos en un solo paso. Sólo aségurate que tengas mucho espacio en disco duro, pues los archivos descomprimidos pueden ocupar hasta 10 veces más. (el asterisco es un comodín)
+
+cat *.faa > mergefile.faa
+El comando es cat (concatenate), que usando el asterisco básicamente le decimos a linux "Toma todos los archivos .faa que estan en la carpeta actual y combinalos en este nuevo archivo llamado "mergefile.faa". cat concatena uno por uno los archivos para formar un solo archivo. Puedes hacerlo también así:
+
+$ cat file1.txt file2.txt file3.txt file4.txt > ./mergedfile.txt
+$ cat file*.txt my*.txt > mergedfile.txt
+
+Para visualizar los archivos descomprimidos, puedes usar cualquiera de los siguientes comandos: less, more, cat, tail, head.
+
+$grep [Opciones] [Palabra Clave] [Documento a escanear]
+Busca patrones que le digas dentro del archivo que especifiques. Busca palabras clave!
+
+Opciones útiles
+
+-n Muestra el número de línea de las coincidencias que encuentre. Puede llegar a saturar la terminal, así que usalo con cuidado.
+-c Muestra solo el número total de coincidencias
+-i Me vale verga si es minuscula o mayuscula, tu buscamelo.

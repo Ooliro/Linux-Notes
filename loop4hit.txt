@@ -1,0 +1,22 @@
+# Busqueda y rescate. Dada la lista 1, busca coincidencias en la lista 2 e imprime las mismas.
+
+# Busqueda con opcion Perl para que reconozca los tabuladores dentro de la busqueda
+for S in $(cat $1 | awk '{print $2}');
+do
+    grep -P "\t$S\t" $2 >> found.temp
+
+done
+
+
+# Busqueda original
+for S in $(cat file2 | awk '{print $1}'); 
+do 
+	grep $S file1; 
+done
+    
+Donde: 
+
+file1: Archivo en el que buscara coinicidencias # gtfs.csv por ejemplo 
+
+file2: Archivo que determinara el orden de las coincidencias halladas # hmm_maze.csv por 
+ejemplo. Que solo tiene los los números de acceso en el orden de la lista original.
