@@ -1,14 +1,3 @@
-# Conexiones ssh
-
-Computadora de Carlos: ssh rolivares@10.10.180.37
-
-Computadora Blanca: ssh rolivares@10.10.180.36
-
-Computadora Puente: ssh -p 6112 rolivares@132.248.16.17
-
-
-
-
 
 chmod 755 [nombre a modificar]
 
