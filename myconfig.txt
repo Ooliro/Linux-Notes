@@ -1,7 +1,0 @@
-
-Para saltar el puente del IFC
-
-alias sscp1="scp -oProxyJump=ubmi01"
-alias sscp2="scp -oProxyJump=ubmi02"
-
-Se usa así: $ sscp [tu archivo local] ubmi02:/path/de/destino
